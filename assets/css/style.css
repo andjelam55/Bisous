@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+@font-face {
+    font-family: 'MojFont'; 
+    src: url("BrittanySignature.ttf"); 
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Cabin", sans-serif;
+}
+:root{
+    --narandzasta:#f3ac50de;
+    --siva: #f2f2f2;
+    --tamnasiva: #c2c0c0;
+    --crna: #333;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover, .aktivan-link, .narandzasta-slova{
+    color: var(--narandzasta);
+}
+.txt-centar{
+    text-align: center;
+}
+ul li{
+    list-style-type: none;
+}
+header{
+    padding: 50px;
+    background-attachment: fixed;
+    
+}
+#pocetna_slika{
+    background-image: linear-gradient(rgba(76, 75, 75, 0.75) ,rgba(0,0,0,0.75)), url(../img/glavna.jpg);
+}
+
+#pridruzise_slika{
+    background-image: linear-gradient(rgba(76, 75, 75, 0.75) ,rgba(0,0,0,0.75)), url(../img/pridruzise.jpg);  
+}
+#galerija_slika{
+    background-image: linear-gradient(rgba(76, 75, 75, 0.75) ,rgba(0,0,0,0.75)), url(../img/galerija.jpg);  
+}
+#onama_slika{
+    background-image: linear-gradient(rgba(76, 75, 75, 0.75) ,rgba(0,0,0,0.75)), url(../img/o_nama.jpg);  
+}
+#oautoru_slika{
+    background-image: linear-gradient(rgba(76, 75, 75, 0.75) ,rgba(0,0,0,0.75)), url(../img/oautoru.jpg);  
+}
+.rastojanje{
+    display: flex;
+    justify-content: space-between;
+}
+.poravnanje-u-liniji{
+    align-items: baseline;
+}
+.vertikalno-poravnanje{
+    align-items: center;
+}
+.logo-naslov{
+    font-family: 'MojFont';
+}
+#logo a{
+    font-weight: 50;
+}
+#logo a:hover{
+    color: white;
+}
+nav ul li{
+    display: inline;
+    margin-left: 30px;
+}
+nav ul li a{
+    color: var(--siva);
+}
+.okvir{
+    padding: 50px 7%;
+}
+/* Animacija */
+@keyframes naslov-animacija {
+    0% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.glavni-naslov{
+    text-align: center;
+    margin: 70px 0px;
+    color: white;
+    font-size: 50px;
+    animation: 1s ease-out 0s 1 naslov-animacija;
+}
+.g-margina{
+    margin-top: 50px;
+}
+.blok{
+    border: 2px solid var(--siva);
+    box-shadow: 1px 2px 5px;
+    width: 30%;
+    padding: 30px 15px;
+    border-radius: 7px;
+}
+.blok:hover{
+    box-shadow: 5px 5px 10px var(--narandzasta);
+    transition: 0.8s ease-in-out;
+}
+.blok h4{
+    margin: 15px;
+    color: var(--narandzasta);
+    font-size: 1.5rem;
+}
+.blok i{
+    font-size: 1.5rem;
+    color: var(--tamnasiva);
+}
+.siva-pozadina{
+    background-color: var(--siva);
+}
+.blok-2{
+    width: 45%;
+}
+.blok-2 h4, #velika-slova{
+    font-size: 1.5rem;
+}
+.blok-2 img{
+    width: 100%;
+    border-radius: 30% 70% 33% 67% / 70% 17% 83% 30%;
+}
+.dugme{
+    background-color: var(--narandzasta);
+    padding: 15px 30px;
+    border-radius: 7px;
+}
+.dugme:hover{
+    background-color: var(--tamnasiva);
+    color: white;
+    
+}
+.txt-centar.okvir p:first-child{
+    font-size: 30px;
+    margin-bottom: 30px;
+
+}
+footer{
+    background-color: var(--crna);
+    padding: 50px;
+}
+footer h4{
+    margin-bottom: 15px;
+    color: var(--tamnasiva);
+    font-weight: 10;
+    font-size: 20px;
+}
+footer div:nth-child(2){
+    text-align: center;
+}
+footer div:nth-child(3){
+    text-align: right;
+}
+footer input[type="email"]{
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+footer button{
+    background-color: var(--crna);
+    border: 2px solid var(--siva);
+    border-radius: 7px;
+    padding: 10px 15px;
+    color: var(--siva);
+}
+footer button:hover{
+    background-color: var(--narandzasta);
+    border: 2px solid var(--narandzasta);
+    cursor: pointer;
+}
+footer i{
+    font-size: 20px;
+    margin-left: 7px;
+}
+.galerija-slike{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+.slike{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+.donja-margina{
+    margin-bottom: 15px;
+}
+ .slike img{
+    width: 100%;
+    border-radius: 7px;
+}
+.prelaz-vertikalno{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #5c5c5cb0;
+    border-radius: 7px;
+}
+.prelaz-horizontalno{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #5c5c5cb0;
+    border-radius: 7px;
+}
+.slika-prelaz:hover .prelaz-vertikalno{
+    opacity: 1;
+    cursor: pointer;
+}
+.slika-prelaz:hover .prelaz-horizontalno{
+    opacity: 1;
+    cursor: pointer;
+}
+.o-slici{
+    color: whitesmoke;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.slika-prelaz{
+    position: relative;
+    width: 100%;
+}
+.opis-slike h6{
+    color: #f3ac50;
+    font-size: 20px;
+}
+/* Pridruzi se */
+.cenovnik{
+    color: var(--crna);
+    font-family:'Raleway';  
+}
+.cenovnik table{
+    width: 50%;
+    margin: 15px auto;
+    background-color: white;  
+}
+.cenovnik table th{
+    background-color: var(--narandzasta);
+}
+.cenovnik table, th, td{
+    border:  2px solid #ccc;
+    border-collapse: collapse;
+}
+.cenovnik table th, td{
+    padding: 10px;
+}
+#kontakt{
+    margin: 0 auto;
+    width: 50%;
+}
+#kontakt input, #kontakt select, #kontakt textarea{
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+button{
+    cursor: pointer;
+    border: var(--narandzasta);
+}
+.autor{
+    width: 40%;
+}
+.autor h2, .autor h3{
+    font-weight: 100;
+}
+.autor h3{
+    margin-bottom: 15px;
+}
+.autor img{
+    border-radius: 30% 70% 33% 67% / 70% 17% 83% 30%;
+    width: 100%;
+}
+#slika-onama{
+    position: relative;
+    left: 30%;
+    width: 40%;
+    margin: 15% 0;
+}
+#slika-onama img{
+    width: 100%;  
+}
+#tekst-onama{
+    position: absolute;
+    width: 80%;
+    border: 2px solid var(--tamnasiva);
+    background-color: var(--siva);
+    top: 80%;
+    left: 50%;
+    padding: 20px;  
+}
+#tekst-onama, #slika-onama img{
+    box-shadow: 1px 2px 5px;
+    border-radius: 20px;
+}
+#tekst-onama h3{
+    color: var(--narandzasta);
+    margin-bottom: 5px;
+}
+#nastavnik{
+    position: absolute;
+    width: 35%;
+    top: -20%;
+    left: -20%;  
+}
+#nastavnik img{
+    border-radius: 50%;
+}
+
+
+
+
+

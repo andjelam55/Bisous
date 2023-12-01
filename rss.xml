@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+	<channel>
+		<title>Obaveštenje</title>
+		<link></link>
+		<description>Pogledaj naše nove vesti!</description>
+	<item>
+		<title>Novi kursevi</title>
+		<link></link>
+		<description>Novo u ponudi!</description>
+	</item>
+	<item>
+		<title>Novo u našoj galerija</title>
+		<link></link>
+		<description>Naši novi studenti!</description>
+	</item>
+	</channel>
+</rss>
