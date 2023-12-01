@@ -2,16 +2,16 @@
 <rss version="2.0">
 	<channel>
 		<title>Obaveštenje</title>
-		<link></link>
+		<link>https://andjelam55.github.io/Bisous/index.html</link>
 		<description>Pogledaj naše nove vesti!</description>
 	<item>
 		<title>Novi kursevi</title>
-		<link></link>
+		<link>https://andjelam55.github.io/Bisous/pridruzi-se.html</link>
 		<description>Novo u ponudi!</description>
 	</item>
 	<item>
 		<title>Novo u našoj galerija</title>
-		<link></link>
+		<link>https://andjelam55.github.io/Bisous/galerija.html</link>
 		<description>Naši novi studenti!</description>
 	</item>
 	</channel>
